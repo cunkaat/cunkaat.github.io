@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap');
+
+html {
+    font-size: 1.89375rem;
+    background-color: #AA346F;
+}
+
+body {
+    background-color: #AA346F;
+    color: #FCE0F6;
+    line-height: 1.5;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0; 
+}
+
+h1 {
+    color: #AA346F;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--Light-Yellow, #FFECB6);
+    text-align: center;
+    font-family: Bona Nova;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+a {
+    color: #AA346F;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    margin: 0 0 0 2rem;
+}
+
+a:hover {
+    color: #FFECB6
+}
+
+nav {
+    background-color: #FCE0F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.5rem;
+
+}
+
+nav img{
+    width: 12.6875rem;
+    height: 6.125rem;
+}
+
+ section {
+    margin: 9.25rem auto;
+   text-align: center;
+   font-family: Helvetica;
+ }
+
+ main {
+    max-height: 150vh; 
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ main img {
+    height: 26rem;
+}
+
+.aboutpage {
+    max-height: 50h;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+#bio_1 {
+    grid-column: 6/7;
+}
+
+#selfportrait {
+    grid-column: 2/6;
+
+   
+}
+
+#bio_p1 {
+    grid-column: 7/11;
+    text-align: left;
+}
+
+footer {
+    background-color: #FCE0F6;
+    width: 100%;
+    margin:auto; 
+    position: fixed;
+    bottom: 0;
+}
+
+footer img {
+    height: 1.8rem;
+}
