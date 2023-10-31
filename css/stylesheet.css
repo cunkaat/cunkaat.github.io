@@ -46,7 +46,7 @@ h2 {
     color: var(--Light-Yellow, #FFECB6);
     text-align: center;
     font-family: Bona Nova;
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -62,6 +62,18 @@ a {
     line-height: normal;
     text-decoration: none;
     margin: 0 0 0 2rem;
+}
+
+#indexpage {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat  (12, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+#bioline {
+    grid-column: 4/10;
 }
 
  #portfoliomain section {
@@ -117,6 +129,43 @@ h3 {
     text-align: left;
     font-size: 0.80rem;
     font-family: helvetica;
+}
+
+.contact {
+    margin: 6rem auto;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #FCE0F6;
+    color: #AA346F;
+    font-size: 2.8125rem;
+    padding: 8px 16px 8 px 16px;
+}
+
+label {
+    display: block;
+    margin: 16px 0px 16px 0px;
+    font-family: helvetica;
+    font-size: 0.9rem;
+}
+
+textarea {
+    height: 250px;
+    font-family: helvetica;
+
+}
+
+button {
+    background-color: #FFECB6;
+    border: none;
+    font-size: 20px;
+    font-family: helvetica;
+    padding: 8px 16px 8px 16px
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #FCE0F6;
 }
 
 footer {
