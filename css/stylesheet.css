@@ -211,11 +211,17 @@ footer img {
     max-width: 1000px;
     position: relative;
 }
-* {box-sizing:border-box}
+* {
+    box-sizing:border-box
+}
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
 }
 
 /* Next & previous buttons */
