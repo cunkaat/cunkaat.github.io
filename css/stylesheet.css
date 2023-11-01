@@ -17,6 +17,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0; 
+    
 }
 
 nav {
@@ -25,11 +26,16 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-size: 2rem;
-
+    padding-right: 1rem;
+    padding-top: 0.5rem;
 }
 
 nav img{
     width: 9rem;
+}
+
+nav h1:hover {
+    text-decoration: underline #AA346F;
 }
 
 h1 {
@@ -72,8 +78,16 @@ a {
     grid-auto-flow: dense;
 }
 
-#bioline {
-    grid-column: 4/10;
+#nav_home {
+    text-decoration: underline #91C2AA;
+    color: #91C2AA;
+} 
+
+#bioline img {
+    width: 35rem;
+    display: block;
+  margin-left: 9.6rem;
+    position: relative;
 }
 
  #portfoliomain section {
@@ -102,9 +116,19 @@ a {
     grid-auto-flow: dense;
 }
 
+#nav_about {
+    text-decoration: underline #91C2AA;
+    color: #91C2AA;
+}
+
 h3 {
     font-size: 0.7rem;
 
+}
+
+#nav_works {
+    text-decoration: underline #91C2AA;
+    color: #91C2AA;
 }
 
 #bio_1 {
@@ -122,7 +146,6 @@ h3 {
     height: 19.5rem;
 }
 
-
 #bio_p1 {
     grid-column: 7/11;
     grid-row: 3/4;
@@ -133,6 +156,11 @@ h3 {
 
 .contact {
     margin: 6rem auto;
+}
+
+#nav_contact {
+    text-decoration: underline #91C2AA;
+    color: #91C2AA;
 }
 
 input, textarea {
@@ -191,7 +219,13 @@ footer img {
 }
 
 .work_titles {
-    margin: 7rem auto;
+    margin: 8rem auto;
+    grid-column: 2/5;
+    font-size: 1.74rem;
+}
+
+.shortwork_titles {
+    margin: 11rem auto;
     grid-column: 2/5;
     font-size: 1.74rem;
 }
@@ -199,90 +233,14 @@ footer img {
 .works_p {
     margin: 5rem auto;
     grid-column: 2/5;
-    grid-row: 2;
+    grid-row: 2/3;
     font-size: 0.9rem;
     text-align: justify;
 }
 
-.slideshow_container {
-    margin: 5rem auto;
-    grid-column: 7/12;
-    grid-row: 3/6;
-    max-width: 1000px;
-    position: relative;
-}
-* {
-    box-sizing:border-box
+.works_slides {
+    margin: 7rem auto;
+    grid-column: 6/11;
+    grid-row: 1/7;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides img {
-    vertical-align: middle;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
